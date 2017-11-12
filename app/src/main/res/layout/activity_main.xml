@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+   >
+
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name" />
+    <EditText
+        android:id="@+id/edtid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="id" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnadd"
+            android:onClick="btn_add"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="add" />
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:onClick="btn_update"
+            android:layout_height="wrap_content"
+            android:text="update" />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_weight="1"
+            android:onClick="btn_delete"
+            android:layout_height="wrap_content"
+            android:text="delete" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:padding="10dp" >
+    </ListView>
+
+</LinearLayout>
